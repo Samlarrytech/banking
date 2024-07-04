@@ -30,7 +30,8 @@ const MobileNav = ({ user }: MobileNavProps) => {
             className="cursor-pointer"
           />
         </SheetTrigger>
-        <SheetContent side="left" className="border-none bg-white">
+        <SheetContent side="left" 
+        className="border-none bg-white">
           <Link
             href="/"
             className="flex
@@ -41,10 +42,10 @@ const MobileNav = ({ user }: MobileNavProps) => {
               src="/icons/logo.svg"
               width={34}
               height={34}
-              alt="Globacom"
+              alt="STERLINTRUST"
             />
             <h1 className="text-26 font-ibm-plex-serif font-bold text-black-1">
-            sterlintrust
+            STERLINTRUST
             </h1>
           </Link>
 
