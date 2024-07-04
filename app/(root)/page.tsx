@@ -7,23 +7,20 @@ import React from 'react'
 const Home = async () => {
     const loggedIn = await getLoggedInUser();
   
-
   return (
     <section className='home'>
         <div className='home-content'>
             <header className='home-header'>
-                <HeaderBox 
-                 type="greeting"
-                 title="Welcome"
-                 user={loggedIn?.name || 'Guest'}
-                subtext="Effortlessly Navigate Your Accounts and Transactions."
-                />
-
+            <HeaderBox 
+            type="greeting"
+            title="Welcome"
+            user={loggedIn?.name || 'Guest'}
+            subtext="Access and manage your account and transactions efficiently."
+            />
                 <TotalBalanceBox 
                 accounts={[]}
                 totalBanks={1}
                 totalCurrentBalance={1240.87}
-                
                 />
             </header>
             RECENT TRANSACTIONS
@@ -32,7 +29,7 @@ const Home = async () => {
         user={loggedIn}
         transactions={[]}
         banks={[{currentBalance:1247.89 }, {
-          currentBalance:2289.00
+          currentBalance:3289.00
         }]}
         />
     </section>
